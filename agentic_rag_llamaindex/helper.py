@@ -18,7 +18,7 @@ def get_openai_api_key():
 
 def load_api_key(file_name: str):
     cwd = os.getcwd()
-    file_path = os.path.join(f"{cwd[:-3]}pat/",file_name)
+    file_path = os.path.join(f"{cwd[:-27]}/APIs/",file_name)
     
     if not os.path.exists(f"{file_path}"):
         raise FileNotFoundError(f"The file {file_path} does not exist.")
